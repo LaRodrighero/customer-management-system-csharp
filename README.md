@@ -27,34 +27,32 @@ Console-based customer management system developed in C# with focus on object-or
 
 ## Project Structure
 
-### Models
+### App
+- `Program.cs` - Application entry point and main system flow
 
-* `Cliente.cs` - Customer model
-* `Usuarios.cs` - User model
+### Models
+- `Cliente.cs` - Customer model
+- `Usuarios.cs` - User model
 
 ### Repositories
-
-* `IRepositorioBase.cs` - Generic repository interface
-* `IRepositorioCli.cs` - Customer repository interface
-* `RepositorioCli.cs` - In-memory customer repository
-* `RepositorioCliJson.cs` - JSON-based customer persistence
-* `RepositorioUsuarioJson.cs` - JSON-based user persistence
+- `IRepositorioBase.cs` - Generic repository interface
+- `IRepositorioCli.cs` - Customer repository interface
+- `RepositorioCli.cs` - In-memory customer repository
+- `RepositorioCliJson.cs` - JSON-based customer persistence
+- `RepositorioUsuarioJson.cs` - JSON-based user persistence
 
 ### Services
-
-* `OrdenadorClientes.cs` - Customer sorting service
-* `RepOrdenarCli.cs` - Sorting logic using LINQ
+- `OrdenadorClientes.cs` - Customer sorting service
+- `RepOrdenarCli.cs` - Sorting logic using LINQ
 
 ### Utils
-
-* `Validador.cs` - CPF and birth date validation
+- `Validador.cs` - CPF and birth date validation
 
 ### Main Files
-
-* `Program.cs` - Application entry point and main system flow
-* `clientes.json` - Customer data persistence
-* `usuarios.json` - User data persistence
-* `CrudCompleto.csproj` - .NET project configuration
+- `clientes.json` - Customer data persistence
+- `usuarios.json` - User data persistence
+- `CrudCompleto.csproj` - .NET project configuration
+- `desafios.cs` - Development challenges and learning notes
 
 ## Concepts Applied
 
